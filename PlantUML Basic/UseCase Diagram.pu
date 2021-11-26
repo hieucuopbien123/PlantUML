@@ -1,0 +1,16 @@
+'Usecase Diagram
+@startuml basic
+(First Usecase)
+(Another) as (Hieu)
+usecase Hello
+usecase (Hello\nWorld) as UC4
+' usecase cũng chỉ là 1 dạng ký hiệu
+' ta có thể dùng (<>) or :<>: đều được
+' <kiểu hình> <tên> as <tên định danh>
+
+:First Actor:
+:Another \nactor: as Man2
+actor Woman3
+actor :Last actor: as Person1
+
+@enduml

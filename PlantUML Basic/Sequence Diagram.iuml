@@ -1,0 +1,73 @@
+'squence diagram
+@startuml basic
+header PageHeader
+footer Page %page% of %lastpage%
+title Example
+
+autonumber
+Bob -> Alice : hello
+
+autonumber 10 3
+'<start> <increment>(optional)
+Bob <-- Bob : World
+
+' participant chỉ là biến bth mà thôi, nó sẽ tự khai báo nếu ta k khai báo
+' VD Alice tự khai báo thời điểm gọi, Bob dùng trước khi khai báo luôn. Participant k có màu
+' 2 cái khai báo ngang hàng thì cái nào sau sẽ nằm bên phải
+participant Participant as Foo
+actor Actor as Foo1
+'cái as là để đặt tên khác từ tên mặc định
+boundary Boundary as Foo2
+control Control as Foo3
+entity "I have a long name" as L #99FF99
+database Database as Foo5
+collections Collections as Foo6
+queue Queue #red
+
+alt successful case
+    Foo ->x Foo1 : To Actor
+else some kind of faiure
+    Foo3 --[#0000FF]> L : To L
+    group My own label
+        Foo1 ->> Queue : To Queue nè
+        loop 1000 times
+            Queue -[#green]\ "K define tự có, phải có dấu ''": xh ngoài cùng
+        end
+        Foo2 -> Foo3
+    end
+else Another type of failure
+    skinparam SequenceMessageAlignment right
+    'có làm chữ dịch sang phải 1 tí
+    skinparam ResponseMessageBelowArrow true
+    A -> B : Text
+    A <- B : Text
+    'chỉ xuất hiện dưới khi 2 cái trỏ đến nhau như này kiểu request và response
+end
+
+C <-> D
+note left: this is left note
+C <->o D
+note right: this is right note
+C o\\-- D
+note left 
+line 1 
+line 2
+end note
+opt opt test
+    C \\- D
+end
+break break test
+    critical critical test
+        par par test
+            C //-- D
+        end
+    end
+end
+
+participant Last order 30
+participant Middle order 20
+participant First order 10
+'order sẽ xác định thêm thứ tự của object
+
+Alice <- Alice: This is a signal to self.\nIt also demonstrates\nmultiline \ntext
+@enduml
