@@ -1,0 +1,38 @@
+Tổng kết mọi thứ dùng trong sequence diagram:
+
+'Sequence Diagram
+@startuml
+<> ->/ -->/ <-/ ->x/ o<-/ \\-/ //-/ -[#green]->/ ->>/ <-> <> : <>
+
+note left/right : <>
+
+note left
+end note
+
+header <>
+footer %page% %lastpage%
+title <>
+
+participant <> as <>
+actor <>
+boundary <> <color>
+control <> as <> <color>
+entity <>
+database <>
+collections <>
+queue <>
+
+alt <>
+else <>
+else <>
+end
+
+group/loop/opt/break/critical <>
+end
+
+skinparam SequenceMessageAlignment right
+skinparam ResponseMessageBelowArrow true
+<> -> <> : <>
+<> <- <> : <>
+@enduml
+

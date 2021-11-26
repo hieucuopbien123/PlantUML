@@ -1,0 +1,28 @@
+-> BrSE(bridge system engineering) là kỹ sư cầu nối, kết nối team dev với khách hàng để đảm bảo 2 bên hiểu nhau và làm việc thuận lợi. Phải nắm được từ đầu tới đuôi dự án để ứng phó kịp thời. 
+Kỹ sư cầu nối là nhiều nghành nói chung còn BrSE là chỉ kỹ sư cầu nối riêng của công ty IT. 
+BrSE sẽ liên hệ khách hàng, phân tích yêu cầu, lên kế hoạch, trực tiếp code, demo sản phẩm cho khách hàng, báo cáo tiến độ, thương lượng với khách khi có vấn đề phát sinh, cân bằng lợi ích 2 bên. 
+BrSE còn là BA(Business Analyst) trao đổi với khách hàng r chuyển thông tin thảo luận với team nội bộ và PM(Project Manager) khác với PM bình thường là người phân chia, giám sát công việc từng người thì BrSE kiêm vai trò PM chỉ là giám sát chung dự án và báo cáo tiến độ cho khách mà thôi
+=> Đây là 1 nghành riêng đòi hỏi nhiều kinh nghiệm và kiến thức chuyên môn.
+
+-> Basic design và detail design:
+Thiết kế cơ bản sẽ xây dựng nền móng của dự án, bố cục định hướng, khái quát nhiệm vụ. Detail design sẽ đi vào chi tiết từng phần.
+
+Vẽ flowchart hay vẽ flow có thể được dùng để mô tả trước khi làm các phần trong project để k bị loạn, tránh lỗi, ví dụ API, trigger(cái gì xảy ra trigger 1 cái gì), schedule đều có thể vẽ flow, thậm chí có khách hàng còn bắt vẽ flow để review trước r mới cho dev code.
+
+-> diagram.net là tool free vẽ flow chart, kéo thả rất đơn giản, có thể lưu là file xml. Nhưng tốt hơn là dùng PlantUML trên VSC
+
+UML (Unified Modeling Language) là ngôn ngữ dành cho việc đặc tả, hình dung, xây dựng và làm tài liệu của các hệ thống phần mềm. VD trong UMl có rất nhiều các dạng biểu đồ
+
+PlantUML là tool convert code sang biểu đồ UML.
+Free, dễ dùng, dễ share(dùng git), nhanh hơn, hỗ trợ hầu hết, dùng đc code, dễ export
+
+Dùng online: http://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000?fbclid=IwAR24uCiNsaBxJMYz2g8oHP5xlADQUbt4yLwk4He3kueqbMewuvr9wrEMCpo
+
+Cài để dùng tiện và k cần internet: cài PlantUML trong VSC là xong
+Tạo file có đuôi là .iuml, .plantuml, .puml, .pu -> code-> ALT+D để xem biểu đồ
+
+Có documentation plantuml.com
+
+có nhiều dạng biểu đồ:
+Sequence diagram, Usecase diagram, Class Diagram, Object diagram, Activity diagram, Component diagram, Deployment diagram, State diagram, Timing diagram
+
